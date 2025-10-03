@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/*Variáveis em CSS: --nomeDaVariavel*/
+:root {
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/MoonStars.svg);
+}
+
+/*Classe que será acrescentada a tag HTML pelo JS para alternar a página para light mode*/
+.light {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/Sun.svg);
+}
+
 body {
     /*
      background-image: url(./assets/bg-mobile.jpg);
@@ -11,11 +33,11 @@ body {
      background-position: top center;
      background-size: cover;
     */
-    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
-    color: white;
+    color: var(--text-color);
     font-family: 'Inter', sans-serif;
 }
 
@@ -40,6 +62,51 @@ body * {
     margin-top: 8px;
 }
 
+/* switch */
+
+#switch {
+    position: relative;     /*Vai relativizar a posição do button dentro da div switch*/
+
+    height: 24px;
+    width: 64px;
+
+    margin: 4px auto;
+}
+
+#switch button {
+    height: 32px;
+    width: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    /*position absolute abre z-index (numero da camada de sobreposição. Também
+                                libera top, left, right..... Ex: top: 0; */
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;  /*tenho que voltar o left para sua configuração inicial*/
+}
+
+#switch span {
+    display: block;
+    height: 24px;
+    width: 64px;
+    /* surface-color-dark-mode */
+    background: var(--surface-color);
+    /* stroke-color-dark-mode */
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur (4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
 /* links  */
 
 ul {
@@ -60,8 +127,8 @@ ul li a {
 
     padding: 16px 24px;
 
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
     backdrop-filter: blur(4px);
@@ -75,8 +142,8 @@ ul li a {
 
 /* :hover -> pseudo-selector */
 ul li a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid white;
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
 }
 
 #social-links {
@@ -96,10 +163,22 @@ ul li a:hover {
     padding: 16px;
 
     transition: background 0.2s;
-        border-radius: 50%;
+    border-radius: 50%;
 }
 
 #social-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--highlight-color);
 
+}
+
+footer {
+    color: var(--text-color);
+    padding: 24px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    font-weight: 500;
 }
