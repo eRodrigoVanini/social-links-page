@@ -1,26 +1,22 @@
-# Página de Links e Redes Sociais
+# Links & Socials Page
 
-## 📋 Função da Página
+## :clipboard: Page Purpose
+This project is a simple “Linktree-style” page that acts as an aggregator for my social networks and other online projects. The page is responsive and was created as a digital business card, centralizing all my links in one place.
 
-Este projeto é uma página simples, no estilo de um "Linktree", que serve como um agregador de links para minhas redes sociais e outros projetos online. A página é responsiva e foi criada para ser um cartão de visitas digital, centralizando todos os meus links em um só lugar.
-
-## 💻 Tecnologias Utilizadas
-
+## :computer: Technologies Used
 - HTML5
 - CSS3
 - JavaScript
 
-## 💡 Aprendizados
+## :bulb: Learnings
+While building this project, I had the opportunity to improve my CSS skills. Key takeaways include:
 
-Durante o desenvolvimento deste projeto, tive a oportunidade de aprimorar minhas habilidades em CSS. Os principais aprendizados incluem:
+- **Smooth Hover Transitions:** Using the `transition` property to create smooth, visually pleasing hover effects on buttons.
+- **Responsive Layout:** Applying techniques to ensure the page adapts to different screen sizes.
+- **Visual Effects with `backdrop-filter`:** Applying filters such as blur or brightness to elements that sit behind a specific element.
+- **Colors with Transparency (`rgba`):** Using the `rgba` color model to set color opacity, enabling semi-transparent backgrounds and elements.
+- **Semantic Structure:** Proper use of HTML tags like `<h1>`, `<h2>`, and `<p>` to structure content in an accessible, SEO-friendly way.
 
-* **Transições Suaves com Hover**: Utilização da propriedade `transition` para criar efeitos de hover suaves e visualmente agradáveis nos botões.
-* **Layout Responsivo**: Aplicação de técnicas para garantir que a página se adapte a diferentes tamanhos de tela.
-* **Efeitos Visuais com `backdrop-filter`**: Aplicação de filtros como `blur` ou brilho em elementos que estão localizados atrás de um elemento específico.
-* **Cores com Transparência (`rgba`)**: Uso do modelo de cores `rgba` para definir a opacidade de cores, permitindo a criação de fundos e elementos semi-transparentes.
-* **Estrutura Semântica**: Uso correto de tags HTML como `<h1>`, `<h2>` e `<p>` para estruturar o conteúdo de forma acessível e otimizada para SEO.
-
-## ▶️ Como Rodar o Projeto
-
-1.  Clone este repositório para sua máquina local.
-2.  Abra o arquivo `index.html` no seu navegador.
+## :arrow_forward: How to Run
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your browser.
