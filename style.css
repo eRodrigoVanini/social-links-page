@@ -7,7 +7,7 @@
 /*Variáveis em CSS: --nomeDaVariavel*/
 :root {
     --text-color: white;
-    --bg-url: url(./assets/bg-mobile.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -15,10 +15,10 @@
     --switch-bg-url: url(./assets/MoonStars.svg);
 }
 
-/*Classe que será acrescentada a tag HTML pelo JS para alternar a página para light mode*/
+/*Classe que será acrescentada a tag HTML pelo JS  alternar a página para light mode*/
 .light {
     --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -87,6 +87,7 @@ body * {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .light #switch button {
