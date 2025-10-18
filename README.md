@@ -1,4 +1,17 @@
 # Links & Socials Page
+<p align="center">
+  <a href="https://erodrigovanini.github.io/social-links-page/">
+    <img src="assets/preview_dark.png" alt="Preview do projeto" width="900">
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="https://erodrigovanini.github.io/social-links-page/">
+    <img src="https://img.shields.io/badge/ACESSE%20O%20PROJETO-000000?style=for-the-badge" alt="ACESSE O PROJETO">
+  </a>
+</p>
+
 
 ## :clipboard: Page Purpose
 This project is a simple “Linktree-style” page that acts as an aggregator for my social networks and other online projects. The page is responsive and was created as a digital business card, centralizing all my links in one place.
