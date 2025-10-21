@@ -14,12 +14,14 @@
 
 
 ## :clipboard: Page Purpose
-This project is a simple “Linktree-style” page that acts as an aggregator for my social networks and other online projects. The page is responsive and was created as a digital business card, centralizing all my links in one place.
+SocialLinks is a link aggregator to use as an online business card.
+
 
 ## :computer: Technologies Used
-- HTML5
-- CSS3
+- HTML and CSS
 - JavaScript
+- Git and GitHub
+- Figma
 
 ## :bulb: Learnings
 While building this project, I had the opportunity to improve my CSS skills. Key takeaways include:
